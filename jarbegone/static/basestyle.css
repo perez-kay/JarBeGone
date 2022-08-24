@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Oxygen&display=swap');
+
+h1, h2 {
+    font-family: 'Oxygen', cursive;
+    color: #3b493b;
+    font-weight: bold;
+}
+
+body {
+    background-color: #faf0ea;
+}
+
+.navbar-brand, .navbar-nav li a {
+    font-family: 'Oxygen';
+    font-weight: bold;
+    color: #ece3de !important;
+}
+
+.navbar {
+    background-color: #48362a;
+}
+
+p {
+    font-family: 'Oxygen';
+}

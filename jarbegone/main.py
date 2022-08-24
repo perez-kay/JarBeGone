@@ -1,0 +1,1 @@
+from jarbegone import app

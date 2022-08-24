@@ -1,0 +1,86 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1682px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.pdf-viewer, .summary, .options {
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.pdf-viewer, .summary {
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+    margin: 10px;
+}
+
+.border.grey {
+    overflow-y: scroll;
+}
+
+.pdf-viewer {
+    background-color: #c1d2c1;
+}
+
+.border.green, .border.grey {
+    border-style: dashed;
+    padding: 30px;
+    border-radius: 20px;
+    width: 580px;
+    height: 750px;
+}
+
+.summary {
+    background-color: #ece3de;
+}
+
+.border.green {
+    border-color: #3b493b;
+}
+
+.border.grey {
+    border-color: #b3adaa;
+}
+
+.pdf-embed {
+    display: flex;
+    justify-content: center;
+
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+embed {
+    border-radius: 10px;
+    width: 550px;
+    height: 650px;
+
+}
+
+a {
+    color: black;
+    font-family: 'Oxygen';
+}
+
+button {
+    text-align: center;
+    height: 70px;
+    width: 170px;
+    font-size: 12pt;
+    margin: 5px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 19%)
+}

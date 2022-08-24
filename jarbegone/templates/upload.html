@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}JarBeGone - Configure Summary{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('.static', filename='upload.css')}}">
+{% endblock %}
+
+{% block page_content %}
+<div class="flex-container">
+    <div class="pdf-viewer">
+        <div class="border green">
+            <h1>Your Uploaded PDF</h1>
+            <div class="pdf-embed">
+                <embed type="application/pdf" src="{{ url_for('show_pdf', filename=file)}}">
+            </div>
+        </div>
+    </div>
+
+    <div class="configure">
+        <div class="border grey">
+
+            <h1>Configure Your Summary</h1>
+            <h3>{{ form.length.label }}</h3>
+            {{ wtf.quick_form(form) }}
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}JarBeGone - View Summary{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('.static', filename='summary.css')}}">
+{% endblock %}
+
+{% block page_content %}
+    <div class="flex-container">
+        <div class="pdf-viewer">
+            <div class="border green">
+                <h1>Your Uploaded PDF</h1>
+                <div class="pdf-embed">
+                    <embed type="application/pdf" src="{{ url_for('show_pdf', filename=file)}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <div class="border grey">
+                <h1>Summary</h1>
+                <p>
+                  {% for sentence in summary %}
+                    {{ sentence + " "}}
+                    {% if loop.revindex > 4 %}
+                        {% if loop.index % 4 == 0 %}
+                          <br><br>
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <div class="options">
+
+            <a href="/"><button type="button" name="button"><label>Upload a New PDF</button></a>
+            <a href="/summary-config"><button type="button" name="length"><label>Change Summary Length</button></a>
+
+        </div>
+    </div>
+
+
+{% endblock %}
