@@ -55,4 +55,19 @@ def get_word_embeddings():
 
 
 def get_matching_txt(filename):
+    """
+    Removes the ".pdf" off of the file name and appends ".txt" to the end.
+    Necessary for getting the respective preprocessed text file for a given PDF.
+
+    Parameters
+    ----------
+    filename : str
+        The name of the file, with the extension included
+
+    Returns
+    -------
+    str
+        The name of the file, with the ".txt" extension in place of ".pdf"
+
+    """
     return filename.rsplit('.', 1)[0].lower() + ".txt"
