@@ -6,7 +6,6 @@ from flask_wtf import FlaskForm
 from wtforms import SubmitField, FileField, RadioField
 from wtforms.validators import InputRequired
 
-
 class FileForm(FlaskForm):
     """
     This class represents a form for uploading a file. Inherits from the
