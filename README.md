@@ -13,6 +13,12 @@ JarBeGone was built with:
 - HTML and CSS
   
 
-## Installation
+## Demonstration
+
+Because JarBeGone is a prototype, installation is not recommended as there are many bugs that may occur. The video below shows a demonstration of the JarBeGone prototype.
+Click the image to be redirected to a YouTube video.
+
+[![Image of JarBeGone Home screen](http://img.youtube.com/vi/5C65vyYi93Y/0.jpg)](http://www.youtube.com/watch?v=5C65vyYi93Y)
+
 
 
