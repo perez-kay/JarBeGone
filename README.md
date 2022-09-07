@@ -4,6 +4,8 @@
 
 JarBeGone is a text summarizer that uses Natural Language Processing techniques to make academic papers eacher for students to comprehend. Unlike other summarizers, JarBeGone is designed to handle the complex jargon and formats of academic papers.
 
+The main aspect of JarBeGone is that is uses the TextRank algorithm, outlined in [this paper](https://aclanthology.org/W04-3252/), to generate a summary for the 8 papers included. Each sentence is ranked based on its relevance to the overall ideas of the paper. Then, the top N sentences, where N is determined by the user-selected length, are displayed in order of appearance. This is to preserve the context of the original paper.  
+
 Read more about this project on the University of Washington Bothell Capstone & Symposium website [here](https://uwb-stem.github.io/spring-2022/csse-abstract-page.html?csse-6-100).
 
 ## Technologies
